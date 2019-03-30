@@ -28,14 +28,20 @@ function byYear(item) {
     }
     return false
 }
-const selection = inventors.filter(byYear)
-console.log(selection)
+const selection1 = inventors.filter(byYear)
+console.log(selection1)
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
+const selection2 = inventors.map(item => item.first)
+console.log(selection2)
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birthdate, oldest to youngest
+inventors.sort(function(a, b) {
+    return a.year - b.year
+})
+console.log(inventors)
 
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live?

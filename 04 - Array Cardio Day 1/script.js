@@ -22,13 +22,7 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
-function byYear(item) {
-    if (item.year >= 1500 && < 1600) {
-        return true
-    }
-    return false
-}
-const selection1 = inventors.filter(byYear)
+const selection1 = inventors.filter(inventor => inventor.year >= 1500 && inventor.year < 1600)
 console.log(selection1)
 
 // Array.prototype.map()

@@ -27,7 +27,7 @@ console.log(selection1)
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
-const selection2 = inventors.map(item => item.first)
+const selection2 = inventors.map(inventor => `${inventor.first} ${inventor.last}`)
 console.log(selection2)
 
 // Array.prototype.sort()
